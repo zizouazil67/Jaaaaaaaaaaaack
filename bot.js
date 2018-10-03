@@ -20,7 +20,7 @@ const gif = require("gif-search");
 
 const client = new Discord.Client({disableEveryone: true});
 
-const prefix = "J";
+const prefix = "M";
 /////////////////////////
 ////////////////////////
 
@@ -54,27 +54,27 @@ client.on('message', message => {
 
 
     if (message.content.startsWith(prefix + 'playing')) {
-    if (message.author.id !== '474175378118803466') return message.reply('** هذا الأمر فقط لصاحب البوت و شكراًً **')
+    if (message.author.id !== '432519584579584001') return message.reply('** هذا الأمر فقط لصاحب البوت و شكراًً **')
     client.user.setGame(argresult);
         message.channel.sendMessage(`**${argresult}** : تم تغيير الحالة`)
     } else
 
 
     if (message.content.startsWith(prefix + 'streem')) {
-    if (message.author.id !== '474175378118803466') return message.reply('** هذا الأمر فقط لصاحب البوت و شكراًً **')
+    if (message.author.id !== '432519584579584001') return message.reply('** هذا الأمر فقط لصاحب البوت و شكراًً **')
     client.user.setGame(argresult, "http://twitch.tv/HP");
         message.channel.sendMessage(`**${argresult}** :تم تغيير الحالة الى ستريمنج`)
     } else
 
     if (message.content.startsWith(prefix + 'setname')) {
-    if (message.author.id !== '474175378118803466') return message.reply('** هذا الأمر فقط لصاحب البوت و شكراًً **')
+    if (message.author.id !== '432519584579584001') return message.reply('** هذا الأمر فقط لصاحب البوت و شكراًً **')
       client.user.setUsername(argresult).then
           message.channel.sendMessage(`**${argresult}** : تم تغير الأسم`)
       return message.reply("**لا تستطيع تغير الأسم الا بعد ساعتين**");
     } else
 
     if (message.content.startsWith(prefix + 'setavatar')) {
-    if (message.author.id !== '474175378118803466') return message.reply('** هذا الأمر فقط لصاحب البوت و شكراًً **')
+    if (message.author.id !== '432519584579584001') return message.reply('** هذا الأمر فقط لصاحب البوت و شكراًً **')
     client.user.setAvatar(argresult);
         message.channel.sendMessage(`**${argresult}** : تم تغير صورة البوت`);
     }
@@ -358,7 +358,7 @@ client.on('message', message => {
     if (message.content === (prefix + "help")) { 
         let helpEmbed = new Discord.RichEmbed()
         .setTitle('**أوامر الميوزك...**')
-        .setDescription('**برفكس البوت  (  J  )**')
+        .setDescription('**برفكس البوت  (  M  )**')
         .addField('play', 'لتشغيل اغنية')
         .addField('join', 'دخول رومك الصوتي')
         .addField('disconnect', 'الخروج من رومك الصوتي')
